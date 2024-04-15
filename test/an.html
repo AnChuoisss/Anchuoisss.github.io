@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tình iu của anhh</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+  </head>
+  <style>body {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Courier";
+    background-color: #fff5e4;
+    color: #ff9494;
+  }
+  
+  img {
+    height: 400px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  #valentineQuestion {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .answerButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    font-family: "courier";
+    margin-bottom: 20px;
+    background-color: #ffe3e1;
+    color: #e67373;
+    border-radius: 12px;
+    border: 2px solid #ffe3e1;
+    box-shadow: 1px 1px 2px #ff9494;
+    transition: 0.3s;
+  }
+  
+  .answerButton:hover {
+    background-color: #ff9494;
+    color: #ffe3e1;
+    border: 2px solid #ff9494;
+    box-shadow: 1px 1px 2px #ffe3e1;
+  }</style>
+  <body>
+    <div id="valentineQuestion"><b>ông  ơi đi hồ với tôi nhé</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">
+ vụt
+    </button>
+    <button class="answerButton" id="noButton">không đi </button>
+    <br />
+    <img src="https://phamvulinh18.github.io/Date/cat.gif" alt="cat asking question" class="responsive" />
+
+    <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
+        });
+    </script>
+  </body>
+</html>
