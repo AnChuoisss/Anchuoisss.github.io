@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="addtocart.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="top-bar">
+            <p><i class="fa-solid fa-envelope"></i>lehaianhp12345@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0342473236</p>
+            </div>
+            <div class="header">
+                <div class="navbar">
+                    <p>AnLeee Shop</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <select name="" >
+                            <option value="1">Bán nhiều nhất</option>
+                            <option value="2">Mới</option>
+                            <option value="3">Nhập khẩu</option>
+                            <option value="4">Nội địa</option>
+                        </select>    
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search...">
+                    </div>
+                    <div class="cart"><i class="fa-solid fa-cart-shopping" id="count"></i></div>
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>Giỏ hàng của tôi</p></div>
+                <div id="cartItem">Giỏ hàng đang trống</div>
+                <div class="foot">
+                    <h3>Tổng</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+        <script src="addtocart.js"></script>
+    </body>
+</html>
